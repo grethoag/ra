@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Realm</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="realm-container">
+        <div class="content">
+            <h1 class="glitch-text">RAINBOW REALM</h1>
+            
+            <div class="portal-menu">
+                <div class="portal" data-realm="ethereal">ETHEREAL GATEWAY</div>
+                <div class="portal" data-realm="void">VOID PASSAGE</div>
+                <div class="portal" data-realm="forbidden">THE FORBIDDEN REALM</div>
+            </div>
+
+            <div class="realm-footer">
+                <div class="coordinates">∆ COORDINATES: [REDACTED] ∆</div>
+                <div class="timestamp">TEMPORAL SYNC: <span id="timestamp"></span></div>
+            </div>
+
+            <!-- Top Right Buttons - Only on main page -->
+            <div class="top-right-buttons">
+                <!-- <div class="action-button copy-button">CA: EVu5czrW2MbLsimbA4AoVLBda45JHtSPCB5dLGBDpump </div> -->
+                <a href="https://x.com/rainbowrealm_ai" target="_blank" class="action-button twitter-button">TWITTER</a>
+            </div>
+        </div>
+        
+        <video id="background-video" autoplay="" loop="" muted="" playsinline="">
+            <source src="media/rainbow4.mp4" type="video/mp4">
+        </video>
+
+        <!-- Ethereal Gateway Section -->
+        <div class="realm ethereal-realm hidden">
+            <div class="return-button">RETURN</div>
+            <video class="realm-video" loop="" muted="" playsinline="">
+                <source src="media/rainbow1.mp4" type="video/mp4">
+            </video>
+            <div class="chat-interface">
+                <div id="chatMessages" class="chat-messages"></div>
+                <div class="chat-container">
+                    <input type="text" id="chatInput" placeholder="Speak to the Lord of the Realm...">
+                    <button id="sendButton" class="send-button">SEND</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Void Passage Section -->
+        <div class="realm void-realm hidden">
+            <div class="return-button">RETURN</div>
+            <video class="realm-video" loop="" muted="" playsinline="">
+                <source src="media/rainbow2.mp4" type="video/mp4">
+            </video>
+            <div class="void-warning">
+                <div class="typing-text"></div>
+            </div>
+        </div>
+
+        <!-- Forbidden Realm Section -->
+        <div class="realm forbidden-realm hidden">
+            <div class="return-button">RETURN</div>
+            <video class="realm-video" loop="" muted="" playsinline="">
+                <source src="media/rainbow3.mp4" type="video/mp4">
+            </video>
+            <div class="password-prompt">
+                <form id="password-form">
+                    <input type="password" class="realm-password" placeholder="Enter the forbidden password..." autocomplete="off">
+                    <button type="submit" class="submit-password">ENTER</button>
+                    <div class="password-error hidden">Access Denied</div>
+                </form>
+            </div>
+            <div class="forbidden-content hidden">
+                <div class="chat-interface evil">
+                    <div id="evilChatMessages" class="chat-messages"></div>
+                    <div class="chat-container">
+                        <input type="text" id="evilChatInput" placeholder="Dare to speak with the Laughing Skull...">
+                        <button id="evilSendButton" class="send-button">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/chatbot.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+</body></html>
