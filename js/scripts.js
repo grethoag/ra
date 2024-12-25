@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(updateTimestamp, 1000);
     updateTimestamp();
 
-    // Copy button functionality
+  /*  // Copy button functionality
     copyButton.addEventListener('click', () => {
         const text = copyText.textContent;
         if (text && text !== 'Copied!') {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 2000);
             });
         }
-    });
+    }); */
 
     // Handle portal interactions
     portals.forEach(portal => {
