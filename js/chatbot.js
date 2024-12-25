@@ -97,7 +97,7 @@ async function handleSendMessage(message) {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer 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'
+                'Authorization': 'Bearer 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'
             },
             body: JSON.stringify({
                 model: 'gpt-3.5-turbo',
